@@ -1,0 +1,8 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
+set (CMAKE_C_STANDARD 11)
+set (CMake_CXX_STANDARD 11)
+project (GameEngine)
+include_directories("${PROJECT_SOURCE_DIR}/Framework/Common")
+include_directories("${PROJECT_SOURCE_DIR}/Framework/Interface")
+add_subdirectory(Framework)
+add_subdirectory(Empty)
