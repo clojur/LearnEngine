@@ -4,13 +4,16 @@
 
 LRESULT CALLBACK WindowProc(HWND hWnd,UINT message,WPARAM wParam,LPARAM lParam);
 
-int WINPAT WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR lpCmdLine,int nCmdShow)
+int WINAPI  WinMain(HINSTANCE hInstance,
+		   HINSTANCE hPrevInstance,
+		   LPTSTR lpCmdLine,
+		   int nCmdShow)
 {
   HWND hWnd;
 
   WNDCLASSEX wc;
 
-  ZeroMemeory(&wc,sizeof(WNDCLASSEX));
+  ZeroMemory(&wc,sizeof(WNDCLASSEX));
 
   wc.cbSize=sizeof(WNDCLASSEX);
   wc.style=CS_HREDRAW|CS_VREDRAW;
@@ -20,7 +23,7 @@ int WINPAT WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR lpCmdLine,
   wc.hbrBackground=(HBRUSH)COLOR_WINDOW;
   wc.lpszClassName=_T("WindowClass1");
 
-  RegisterCLassEx(&wc);
+  RegisterClassEx(&wc);
 
   hWnd=CreateWindowEx(0,
 		      _T("Windowclass1"),
