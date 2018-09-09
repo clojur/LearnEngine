@@ -66,7 +66,7 @@ int main()
 
   while((pEvent=xcb_wait_for_event(pConn))&&!isQuit)
   {
-    switch(pEvent->response_type& ~0x88)
+    switch(pEvent->response_type& ~0x80)
       {
       case XCB_EXPOSE:
 	{
