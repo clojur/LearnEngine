@@ -8,7 +8,6 @@ int My::BaseApplication::Initialize()
 
 void My::BaseApplication::Finalize()
 {
-  string::st
 }
 
 void My::BaseApplication::Tick()
