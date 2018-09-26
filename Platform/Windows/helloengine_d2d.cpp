@@ -5,8 +5,8 @@
 
 ID2D1Factory		*pFactory=nullptr;
 ID2D1HwndRenderTarget	*pRenderTarget=nullptr;
-ID2D1SolidColorBrush	*pLightSlateGrayBrush;
-ID2D1SolidColorBrush	*pCornflowerBlueBrush;
+ID2D1SolidColorBrush	*pLightSlateGrayBrush=nullptr;
+ID2D1SolidColorBrush	*pCornflowerBlueBrush=nullptr;
 
 template<class T>
 inline void SafeRelease(T **ppInterfaceToRelease)
