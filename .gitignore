@@ -1,0 +1,8 @@
+*.exe
+*.obj
+*.cmake
+*vscode
+*.pdb
+build
+debug
+.gitignore
