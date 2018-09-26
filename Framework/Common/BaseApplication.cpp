@@ -8,7 +8,6 @@ int My::BaseApplication::Initialize()
 
 void My::BaseApplication::Finalize()
 {
-  
 }
 
 void My::BaseApplication::Tick()
